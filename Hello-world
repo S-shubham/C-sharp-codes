@@ -1,0 +1,76 @@
+class first
+{
+  static void Main(string args[])
+  {
+    System.Console.WriteLine("Hello world!!");
+  }
+}
+
+
+
+/// first is the name of the class
+    static tells the compiler that no object is needed to access static members
+    void tells the functin is not going to return anything
+    Main is the function name. it is the point from where all the C# program execution begins
+    string args[]- it is a command line argument, while running C# program we can pass arguments
+    System is the namespace
+    Console is the class name
+    WriteLine is the function name
+    
+    
+We can also have System namespace defined at the top of program so that we do not need to write it all the time
+
+using System
+
+class first
+{
+  static void Main(string args[])
+  {
+    Console.WriteLine("Hello World!!!");
+  }
+}
+
+//////////////////////////////////////////////////////////////////////
+ Public modifier can also be used before the name of the class and the main function so that it can also be accessed from outside the class
+ 
+ using System
+ 
+ public class first
+ {
+  public static void Main(string args [])
+  {
+    Console.WriteLine("Hello world");
+  }
+ }
+ 
+ /////////////////////////////////////////////////////////////////////
+ We can also create classes inside namespace.
+ It is used to group together similar classes for easy maintainance
+ 
+ ex:-
+ 
+ using System
+ namespace firstcat
+ 
+ public class first
+ {
+  public static void Main(string args[])
+  {
+    Console.WriteLine("hello worls ");
+  }
+ }
+ 
+ //////////////////////////////////////////////
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
