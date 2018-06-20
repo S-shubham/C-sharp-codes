@@ -1,0 +1,38 @@
+In C# call by value is similar to c++
+call by value does not modify the real parameters rather a copy is passed to the function
+
+//////////////////////////////////////////////////////
+
+
+// functions in c# 
+// it can be declared outside the main function preferabely 
+
+using System;
+
+namespace hello_world
+{    class Program
+    {
+        public void sum(int first,int sec)
+        {
+            first+=10;
+            sec+=10;
+        }
+        static void Main(string[] args)
+        {
+        
+            Console.WriteLine("Enter two numbers to be added : ");
+            int first=Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("enter the second number : ");
+            int sec=Convert.ToInt32(Console.ReadLine());
+            Program obj=new Program();
+            
+            Console.WriteLine("the value of first is: "+first+" and sec is : "+sec+" before passing to function" );
+            obj.sum(first,sec);
+            Console.WriteLine("the value of first is: "+first+" and sec is : "+sec+" after passing to function" );
+            
+            Console.ReadKey();
+        }
+    }
+}
+
+////////////////////////
