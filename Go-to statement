@@ -1,0 +1,37 @@
+Like C++ , C# goto statement transfers the control to the specified label unconditionally
+the use of goto is avoided because it makes the program complex
+
+/////////////////////////////////////////////////////////
+
+using System;
+
+namespace hello_world
+{    class Program
+    {
+        static void Main(string[] args)
+        {
+            // Break statement in c#
+            
+            noa:
+            Console.WriteLine("Enter your age : ");
+            int age=Convert.ToInt32(Console.ReadLine());
+
+            if(age<18)
+            {
+                Console.WriteLine("you are not eligible to vote ");
+                goto noa;
+            }
+            else
+            Console.WriteLine("you can vote !!!!!");
+
+            
+            Console.ReadKey();
+        }
+    }
+}
+
+
+////////////////////////////////////////////////////////////////////////////
+
+the use of goto statement should be avoided
+
