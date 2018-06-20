@@ -1,0 +1,67 @@
+C# break statement is same as that of the c++.
+it is used to break out of loop or switch statement
+
+if there is nested loop then a single break statement will break out of the innermost/ current loop
+
+///////////////////////break in a looop////////////////
+
+using System;
+
+namespace hello_world
+{    class Program
+    {
+        static void Main(string[] args)
+        {
+            // Break statement in c#
+            Console.WriteLine("Enter a value : ");
+            int num=Convert.ToInt32(Console.ReadLine());
+
+            for(int i=0;i<num;i++)
+            {
+                if(i*2>num)
+                {
+                    Console.WriteLine("The breaking condition is true and i is: "+i);
+                    break;
+                }
+                Console.WriteLine("False yet ");
+            }
+            Console.ReadKey();
+        }
+    }
+}
+
+////////////////////////////Break in a nested loop ///////////////
+
+using System;
+
+namespace hello_world
+{    class Program
+    {
+        static void Main(string[] args)
+        {
+            // Break statement in c#
+            Console.WriteLine("Enter a value : ");
+            int num=Convert.ToInt32(Console.ReadLine());
+
+            for(int i=0;i<num;i++)
+            {
+                for(int j=0;j<num;j++)
+                {
+                    Console.WriteLine("not false yet ");
+                    if(num<i*2)
+                    break;
+                }
+
+                Console.WriteLine("i will keep on executing ");
+            }
+            Console.ReadKey();
+        }
+    }
+}
+
+
+///////////////////////////////////////////////////////////////////////////////////////////
+
+we have already seen the use of break statement with switch statement
+
+
