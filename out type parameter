@@ -1,0 +1,49 @@
+In C# we "out" type argument in function is just like reference type except out does not have to be 
+intialized before being passed to the function
+
+the most common benefit of out is when we need multiple return values
+
+it uses the "out" keyword
+// i have not understood it clearly yet
+
+// it seems  that out does not care what the passed value is 
+// it needs to be initialized again inn the function
+// the initialized value is stored in the variable if no modification is done 
+
+//////////////////////////////////////////COde//////////////////////////////////////////////////////////
+
+// functions in c# 
+// it can be declared outside the main function preferabely 
+
+using System;
+
+namespace hello_world
+{    class Program
+    {
+        public void sum(out int first, out int sec)
+        {
+            first=5;
+            sec =6;
+            first+=10;
+            sec+=10;
+        }
+        static void Main(string[] args)
+        {
+        
+            Console.WriteLine("Enter two numbers to be added : ");
+            int first=Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("enter the second number : ");
+            int sec=Convert.ToInt32(Console.ReadLine());
+            Program obj=new Program();
+            
+            Console.WriteLine("the value of first is: "+first+" and sec is : "+sec+" before passing to function" );
+            obj.sum(out first, out sec);
+            Console.WriteLine("the value of first is: "+first+" and sec is : "+sec+" after passing to function" );
+            
+            Console.ReadKey();
+        }
+    }
+}
+
+
+/////////////////////////////////////////////////////////////////////////////////
