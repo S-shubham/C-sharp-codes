@@ -1,0 +1,36 @@
+// functions in c# 
+// it can be declared outside the main function preferabely 
+
+using System;
+
+namespace hello_world
+{    class Program
+    {
+      
+      static int findmin(int[] arr)
+      {
+          int min=arr[0];
+          for(int i=1;i<arr.Length;i++)
+          {
+              if(arr[i]<min)
+              min=arr[i];
+          }
+          return min;
+      }
+        static void Main(string[] args)
+        {
+            // Arrays in C#
+            int[] arr=new int[5];
+            Console.WriteLine("enter five elements :" );
+            for(int i=0;i<5;i++)
+            {
+                arr[i]=Convert.ToInt32(Console.ReadLine());
+
+            }
+            Console.WriteLine("The minimum value in array is : "+ findmin(arr));
+            
+           
+            Console.ReadKey();
+        }
+    }
+}
