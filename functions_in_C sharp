@@ -1,0 +1,104 @@
+the signature of function in c# is :
+
+<access specifier> <return type> function_name(<parameters> )
+{
+  // This is the body of the function 
+  // return statement
+}
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// functions in c# 
+// it can be declared outside the main function preferabely 
+
+using System;
+
+namespace hello_world
+{    class Program
+    {
+        public void show()
+        {
+            Console.WriteLine("hello boy you have made a call to the function");
+        }
+        static void Main(string[] args)
+        {
+        
+            Console.WriteLine("we are going to call function ");
+            Program obj=new Program();
+            obj.show();
+
+            Console.WriteLine(" control returned from the function ");
+            
+            Console.ReadKey();
+        }
+    }
+}
+
+
+//////////////////////////////////////////////////function which takes parameter/////////////////
+
+// functions in c# 
+// it can be declared outside the main function preferabely 
+
+using System;
+
+namespace hello_world
+{    class Program
+    {
+        public void sum(int first,int sec)
+        {
+            Console.WriteLine("the sum of "+first+" and "+sec+" is : "+(first+sec));
+        }
+        static void Main(string[] args)
+        {
+        
+            Console.WriteLine("Enter two numbers to be added : ");
+            int first=Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("enter the second number : ");
+            int sec=Convert.ToInt32(Console.ReadLine());
+            Program obj=new Program();
+            obj.sum(first,sec);
+
+            Console.WriteLine(" control returned from the function ");
+            
+            Console.ReadKey();
+        }
+    }
+}
+
+
+///////////////////////////////////// function with parmeter and return type./////////////////////////////
+
+// functions in c# 
+// it can be declared outside the main function preferabely 
+
+using System;
+
+namespace hello_world
+{    class Program
+    {
+        public Int32 sum(int first,int sec)
+        {
+            return first+sec;
+        }
+        static void Main(string[] args)
+        {
+        
+            Console.WriteLine("Enter two numbers to be added : ");
+            int first=Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("enter the second number : ");
+            int sec=Convert.ToInt32(Console.ReadLine());
+            Program obj=new Program();
+            Console.WriteLine("the sum is : "+ obj.sum(first,sec));
+
+            Console.WriteLine(" control returned from the function ");
+            
+            Console.ReadKey();
+        }
+    }
+}
+
+
+
+////////////////////////////////
