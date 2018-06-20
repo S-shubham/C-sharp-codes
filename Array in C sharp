@@ -16,3 +16,147 @@ int[] arr=new int[5] {1,2,3,4,5};
 int[] arr=new int[] {1,2,3,4,5};
 
 int[] arr= {1,2,3,4,5};
+
+////////////////////////////////////////////////////////CODE///////////////////////////////////
+
+// functions in c# 
+// it can be declared outside the main function preferabely 
+
+using System;
+
+namespace hello_world
+{    class Program
+    {
+      
+        static void Main(string[] args)
+        {
+            // Arrays in C#
+            int[] arr=new int[5];
+            Console.WriteLine("enter five elements :" );
+            for(int i=0;i<5;i++)
+            {
+                arr[i]=Convert.ToInt32(Console.ReadLine());
+
+            }
+            Console.WriteLine("The array that you have entered is : ");
+           for(int i=0;i<5;i++)
+           {
+               Console.WriteLine(arr[i]);
+           }
+           
+            Console.ReadKey();
+        }
+    }
+}
+
+
+/////////////////////////////// Use of arr.length function ///////////////////////////////
+
+// functions in c# 
+// it can be declared outside the main function preferabely 
+
+using System;
+
+namespace hello_world
+{    class Program
+    {
+      
+        static void Main(string[] args)
+        {
+            // Arrays in C#
+            int[] arr=new int[5];
+            Console.WriteLine("enter five elements :" );
+            for(int i=0;i<5;i++)
+            {
+                arr[i]=Convert.ToInt32(Console.ReadLine());
+
+            }
+            Console.WriteLine("The array that you have entered is : ");
+           for(int i=0;i<arr.Length;i++)
+           {
+               Console.WriteLine(arr[i]);
+           }
+           
+            Console.ReadKey();
+        }
+    }
+}
+
+
+/////////////////////////////////Foreach loop///////////////////////////////
+
+// functions in c# 
+// it can be declared outside the main function preferabely 
+
+using System;
+
+namespace hello_world
+{    class Program
+    {
+      
+        static void Main(string[] args)
+        {
+            // Arrays in C#
+            int[] arr=new int[5];
+            Console.WriteLine("enter five elements :" );
+            for(int i=0;i<5;i++)
+            {
+                arr[i]=Convert.ToInt32(Console.ReadLine());
+
+            }
+            Console.WriteLine("The array that you have entered is : ");
+            // use of foreach loop
+            // syntax is 
+            // foreach(<data_type_of_arr> i in arr)
+           foreach(int i in arr)
+            Console.WriteLine(i);
+           
+            Console.ReadKey();
+        }
+    }
+}
+
+
+//////////////////////////////  Arrayk passing to functioin///////////////////////////////////////
+
+Inn C# array passing to a function is similar to c++
+in function parameter enter the signature int[] arr
+and in call just write the name of the array 
+
+
+// functions in c# 
+// it can be declared outside the main function preferabely 
+
+using System;
+
+namespace hello_world
+{    class Program
+    {
+      
+      static void printarr(int[] arr)
+      {
+          for(int i=0;i<arr.Length;i++)
+          Console.WriteLine(arr[i]);
+      }
+        static void Main(string[] args)
+        {
+            // Arrays in C#
+            int[] arr=new int[5];
+            Console.WriteLine("enter five elements :" );
+            for(int i=0;i<5;i++)
+            {
+                arr[i]=Convert.ToInt32(Console.ReadLine());
+
+            }
+            Console.WriteLine("The array that you have entered is : ");
+            
+           printarr(arr);
+            Console.ReadKey();
+        }
+    }
+}
+
+
+////////////////////////////////////////////////////////////////////////////////////////
+
+
