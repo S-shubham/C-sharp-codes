@@ -1,0 +1,229 @@
+C# has loopin similar to C++
+for(initialization, condition, updation)
+
+using System;
+
+namespace hello_world
+{    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("enter any no smaller than 20 ");
+            int num=Convert.ToInt32(Console.ReadLine());
+            for(int i=1;i<=num;i++)
+            {
+                Console.WriteLine(i);
+            }
+            Console.ReadKey();
+        }
+    }
+}
+
+/////////////////////////////////////////////////Nested for loop///////////////////
+using System;
+
+namespace hello_world
+{    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("enter any no smaller than 20 ");
+            int num=Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter one more no. ");
+            int sec=Convert.ToInt32(Console.ReadLine());
+            // nested for loop
+            for(int i=1;i<=num;i++)
+            {
+                for(int j=1;j<sec;j++)
+                Console.WriteLine("sum of "+i+" and "+j+" is : "+(i+j));
+            }
+            Console.ReadKey();
+        }
+    }
+}
+
+////////////////////////Infinite for loop/////////////////////
+
+using System;
+
+namespace hello world
+{
+  class program
+  {
+     static void Main(string args[])
+     {
+      for(;;)
+      Console.WriteLine("This is an infinite loop ");
+     }
+  }
+}
+
+////////////////////////////////////While loop/////////////////////
+
+In c# while loop is similar to C++
+the main purpose behind using while loop is when you do not know in advance the no of times your loop is going to execute then you
+use the while loop
+though it can also be made to work with for loop but while loop seems to be an idel choice
+
+
+using System;
+
+namespace hello_world
+{    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("enter any no smaller than 20 ");
+            int num=Convert.ToInt32(Console.ReadLine());
+            while(num>0)
+            {
+                Console.WriteLine("num is : "+num);
+                --num;
+            }
+
+            Console.ReadKey();
+        }
+    }
+}
+
+//////////////////////////Nested while loop/////////////////////////
+
+using System;
+
+namespace hello_world
+{    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("enter any no smaller than 20 ");
+            int num=Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter second number: ");
+            int sec=Convert.ToInt32(Console.ReadLine());
+            
+            
+            while(num>0)
+            {
+                Console.WriteLine("num is : "+num);
+                int j=sec;
+                while(j>0)
+                {
+                    Console.WriteLine("j is : "+j );
+                    --j;
+                }
+                --num;
+            }
+
+            Console.ReadKey();
+        }
+    }
+}
+
+
+//////////////////////////////////////////////////Infinite while loop///////////////////////
+
+using System;
+
+namespace hello_world
+{    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("enter any no smaller than 20 ");
+            int num=Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter second number: ");
+            int sec=Convert.ToInt32(Console.ReadLine());
+            
+            
+            while(true)
+            {
+                Console.WriteLine("this is an infinite loop ");
+            }
+
+            Console.ReadKey();
+        }
+    }
+}
+
+
+//////////////////////////////////Do-while loop///////////////////////////////
+
+in C# the do-while loop is used when you do not know the no. of times your code will execute in advance and you 
+need to execute the code atleast once.
+
+
+using System;
+
+namespace hello_world
+{    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("enter any no smaller than 20 ");
+            int num=Convert.ToInt32(Console.ReadLine());
+
+            do{
+                Console.WriteLine("must execute at least once ");
+                Console.WriteLine(" num is : "+num);
+                --num;
+            } while(num>0);
+            
+           
+
+            Console.ReadKey();
+        }
+    }
+}
+
+////////////////////////////////////Nested while loop/////////////////////
+
+using System;
+
+namespace hello_world
+{    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("enter any no smaller than 20 ");
+            int num=Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Enter the second number : ");
+            int sec=Convert.ToInt32(Console.ReadLine());
+
+            do{
+                Console.WriteLine("value of sec is : "+sec);
+                --sec;
+                int num1=num;
+                do{
+                Console.WriteLine(" num is : "+num1);
+                --num1;
+            } while(num1>0);
+            }  while(sec>0);          
+           
+
+            Console.ReadKey();
+        }
+    }
+}
+
+
+////////////////////////infinite while loop/////////////////////
+
+using System;
+
+namespace hello_world
+{    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("this is an infinite do while loop ");
+            do{
+                Console.WriteLine("i am an infinite loop bro ");
+
+            }while(true);
+
+            Console.ReadKey();
+        }
+    }
+}
+
+/////////////////////////////////////////////////////////////////////////////
