@@ -1,0 +1,37 @@
+In C# call be reference is done using the keyword "ref" in function as well as function call with arguments
+
+////////////////////////////////////////////////////////////
+
+// functions in c# 
+// it can be declared outside the main function preferabely 
+
+using System;
+
+namespace hello_world
+{    class Program
+    {
+        public void sum(ref int first, ref int sec)
+        {
+            first+=10;
+            sec+=10;
+        }
+        static void Main(string[] args)
+        {
+        
+            Console.WriteLine("Enter two numbers to be added : ");
+            int first=Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("enter the second number : ");
+            int sec=Convert.ToInt32(Console.ReadLine());
+            Program obj=new Program();
+            
+            Console.WriteLine("the value of first is: "+first+" and sec is : "+sec+" before passing to function" );
+            obj.sum(ref first, ref sec);
+            Console.WriteLine("the value of first is: "+first+" and sec is : "+sec+" after passing to function" );
+            
+            Console.ReadKey();
+        }
+    }
+}
+
+
+//////////////////////////////////
