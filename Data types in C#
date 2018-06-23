@@ -1,0 +1,64 @@
+In C# data types are broadly divided into two type
+1) predefined types
+2) custom types
+
+Predefined types are out general data types like int, char, float, bool etc.
+Custom data types are user defined and they are created using Classes
+
+predefined data types can be initialized using literals like:
+int a=10
+char c='c'
+etc...................
+
+but custom data types is initialized using "new" keyword
+
+In c# all the data members or method inside a class can either work with instance or directly with class
+
+so those members which does not depend upon instances are called static members and must be labelled as static
+like main() function is static as no instance or object can invoke it 
+rather it is invoked by class itself
+
+Console is a class and it is declared static and hence all of its members are also static 
+Instance of a console is never created, one console is shared across the whole application
+
+
+////////////////////////example/////////////////////////////////////
+
+// functions in c# 
+// it can be declared outside the main function preferabely 
+
+using System;
+
+namespace hello_world
+{   
+     class Program
+    {
+        public static void Main(string[] args)
+        {
+            Console.WriteLine("what is the name of your panda :");
+            string namep=Console.ReadLine();
+            panda obj=new panda(namep);
+            Console.WriteLine("what is the name of your another panda : ");
+            string sec=Console.ReadLine();
+            panda obj2=new panda(sec);
+
+            panda.population();
+
+            Console.ReadKey();
+        }
+    }
+    class panda
+    {
+        string name;
+        static int count;
+        public panda(string s) { name=s; count=count+1;}
+        public static void population() {Console.WriteLine("the population of panda is : "+count);}
+
+
+    }
+}
+
+///////////////////////////////////////////////////
+
+Here in the above code if i try to access name member it will pop error as it has not been declared public
+so no other class can access it
