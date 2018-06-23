@@ -1,0 +1,23 @@
+// functions in c# 
+// it can be declared outside the main function preferabely 
+
+using System;
+
+namespace hello_world
+{   
+     class Program
+    {
+        public static void Main(string[] args)
+        {
+           int a=int.MinValue;
+           Console.WriteLine("a is : "+a);
+           --a;
+           Console.WriteLine("now a is : "+a);
+           Console.WriteLine("max integer is : "+int.MaxValue);
+
+
+            Console.ReadKey();
+        }
+    }
+    
+}
