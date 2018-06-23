@@ -1,0 +1,18 @@
+IN  C#,
+implicit converson occurs only if these two conditions are satisfied
+1) the compiler can guarantee that they will always succeed
+2) no information is lost in conversion
+
+Explicit conversion takes place under these conditions
+1) the compiler cannot guarantee that they will always succeed
+2) some inforamtino might get lost
+
+ex;
+int a=100;
+float b=a;  (implicit)
+
+short x=(short)a  (explicit)
+
+if compiler can guarantee that they will always fail then both conversion is prohibited
+
+
