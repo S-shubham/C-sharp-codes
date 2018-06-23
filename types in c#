@@ -1,0 +1,87 @@
+In C# all types fall under these four categories
+1) value type
+2) reference type
+3) Generic type parameter
+4) pointer
+
+in case of value type it always stores contant values
+like int,float,char,bool etc.
+
+assignment of one type variable to other result in copying the value
+::::::::::::::::
+Refernece type is different, it is having two parts 1) reference 2) object
+
+the content stored in reference type variable is the referece to the object which is actually storing 
+the values 
+
+so the assignment of one referecne type variable to other result in copying the reference but not the object
+it is similar to many pointers pointing to the same memory location
+
+...............//////////////////////////////////
+// functions in c# 
+// it can be declared outside the main function preferabely 
+
+using System;
+
+namespace hello_world
+{   
+     class Program
+    {
+        public static void Main(string[] args)
+        {
+            panda obj=new panda(10,5);
+            panda obj2=obj;
+            // here bothe the instances are pointing to the same object
+            Console.WriteLine(obj.x);
+            Console.WriteLine(obj2.x);
+            // bothe will print the same value
+            
+            Console.ReadKey();
+        }
+    }
+    class panda
+    {
+        public int x,y;
+        public panda(int a,int b)
+        {
+            x=a;
+            y=b;
+        }
+
+
+    }
+}
+//////////////////////////////////////////////////////
+
+
+In C# the concept of class and struct are different
+
+NUll assignment to reference type
+
+An instance of the class can have a null value indicating it does not point to any object
+ex 
+class point{......}
+
+point p=null;
+
+but a sturct(as it is a value type and a value type cannot have null value)  instance cannot have null value
+a compile time error will be thrown
+
+value type instance(struct) precisely require the same amount of memory as its members to store the object
+
+struct name
+{
+int x,y;
+}
+8 bytes =4+4
+
+but, 
+.......................
+ 
+ A reference type requires separate allocation for reference and object
+ the referece type requires extra memory for administrative overhead
+ 
+ The minimum requirement is 8 bytes 
+ each reference for an object requires an extra 4/8 bytes depending on the 32 b it 64bit platform
+ 
+ 
