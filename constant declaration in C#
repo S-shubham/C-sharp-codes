@@ -1,0 +1,4 @@
+const int a= 55;
+
+it cannot be changed later
+it must be initialized at the time of declaration
