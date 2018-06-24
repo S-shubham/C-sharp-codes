@@ -1,0 +1,26 @@
+// it can be used only with the last parameter
+// using parameter should be declared as an array
+
+using System;
+
+namespace hello_world
+{   
+     class Program
+    {
+        public static void foo(params int[] arr)
+        {
+            Console.WriteLine("params parameter modifier is in play ");
+            for(int i=0;i<arr.Length;i++)
+            Console.WriteLine(arr[i]);
+        }
+        public static void Main(string[] args)
+        {
+           
+           foo(1,2,3,4,5);
+
+
+            Console.ReadKey();
+        }
+    }
+    
+}
