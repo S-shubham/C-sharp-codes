@@ -1,0 +1,17 @@
+an expression essentially denotes value
+
+1) primary expression
+
+math.log(3) - it is intrinisc to the language 
+it consist of two primary exprssion - first is member look up(.)
+second is method call (())
+
+2) void exprssion 
+it has no value 
+
+Console.WriteLine(2)
+it cannot be used in other expression as it will not be substituted for any value
+
+3) assignment expression 
+
+int a=5+9;
