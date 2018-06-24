@@ -1,0 +1,30 @@
+it is a domain for type names
+it is generally present in hierarchy to avoid conflicts
+
+namespace outer.middle.inner
+{
+class c1{}
+class c2{}
+}
+
+it is similar as
+
+namespace outer
+{
+  namespace middle
+  {
+    namespace inner
+    {
+      class c1 {}
+      class c2 {}
+    }
+  }
+}
+
+a type can be referred as fully qualified type name 
+class1 can be referred as 
+
+outer.middle.inner.class1
+
+if no namespace is defined then the type is said to be residing in the global namespace
+
