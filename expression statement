@@ -1,0 +1,12 @@
+1) assignment expression
+ int a=6+8;
+  int b=sum(2,6)
+  
+2) Method call
+
+console.writeline("HI")
+
+3) object instantiation 
+
+new class_obj("hi");
+
