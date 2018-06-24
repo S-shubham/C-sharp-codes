@@ -1,0 +1,6 @@
+while calling the function we actually name the arguments this removes the overhead of positon and we can pass
+argument in different sequence
+
+int foo(int x,int y)
+
+foo(y:3,x:9) ;
