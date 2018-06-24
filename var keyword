@@ -1,0 +1,5 @@
+when declaration and initialization both happens at the same time then we can use this keyword
+it implicitly decided the type of the variable
+
+var x=9 // int
+var a="what is success"  // string
