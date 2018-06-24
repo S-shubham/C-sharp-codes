@@ -1,2 +1,36 @@
 Checked opertor in c# tells if any overflow has occureed or not
-if it has occureed then it w
+if it has occureed then it will generate overflow exception
+
+it deals with integral data only. it does not work with floating point numbers
+
+- it has two versions
+1) int c= checked (a*b);
+
+here it checks a single expression
+
+2) 
+checked
+{
+...
+...
+}
+in this case it checks all of the expressions and if any overflow has occurred it will throw exception
+
+it works with these operators
+++
+--
++
+-
+(both unary and binary)
+*
+/
+
+///////////////////
+checking can be made to apply to all of the program using /checked+ in command line.
+the setting can also be applied in visual studio
+
+"unchecked" expression is used when we do not want to check certain expressions.
+
+ex:- 
+int y= unchecked (a*b);
+
