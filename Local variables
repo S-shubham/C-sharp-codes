@@ -1,0 +1,3 @@
+you cannot have two var in the same block with the same name
+
+** ot it also cannot be declared in any nested blocks
