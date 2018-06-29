@@ -1,0 +1,42 @@
+// functions in c# 
+// it can be declared outside the main function preferabely 
+
+using System;
+
+namespace hello_world
+{  
+    public class panda
+    {
+        public string name;
+        public static int population;
+        public panda(string s)
+        {
+            this.name=s;
+            population+=1;
+        }
+    }
+     class Program
+    {
+       
+        public static void Main(string[] args)
+        {
+
+          Console.WriteLine("Enter the name of mighty pandas ");
+          string s1,s2;
+          s1=Console.ReadLine();
+          s2=Console.ReadLine();
+
+          panda p1=new panda(s1);
+          panda p2=new panda(s2);
+
+          Console.WriteLine("panda 1 is : "+p1.name);
+          Console.WriteLine("panda 2 is :"+p2.name);
+
+          Console.WriteLine("the population of panda is: "+panda.population); 
+
+          Console.ReadKey();
+          
+        }
+    }
+    
+}
