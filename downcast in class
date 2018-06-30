@@ -1,0 +1,43 @@
+downcast creates a subclass reference from base class
+
+i first created a base class object and then downcasted it, and that caused an exception at runtime
+
+next i created the subclass object and then upcasted it and then again downcasted from it and it worked
+
+// in down casting subclass reference is created from the base class
+using System;
+
+namespace hello_world
+{  
+
+     class Program
+    {
+       
+        public static void Main(string[] args)
+        {
+           pol ob=new pol();
+           lol obj=ob;
+           obj.name="shani";
+          // going to perform up casting
+
+          pol obj1=(pol)obj;
+            obj1.sal=100;
+          Console.WriteLine("the name is: "+obj1.name); 
+          Console.WriteLine("your salary in millions is : "+obj1.sal);
+          
+          Console.ReadKey();
+          
+        }
+    }
+    class lol
+    {
+       public  string name;
+    }
+
+    class pol:lol
+    {
+        public int sal;
+
+    }
+    
+}
