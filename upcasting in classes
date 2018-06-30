@@ -1,0 +1,39 @@
+// functions in c# 
+// it can be declared outside the main function preferabely 
+
+using System;
+
+namespace hello_world
+{  
+
+     class Program
+    {
+       
+        public static void Main(string[] args)
+        {
+            pol obj=new pol();
+            obj.name="hi there";
+            obj.sal=100;
+          // going to perform up casting
+
+          lol obj1=obj;
+
+          Console.WriteLine("the name is: "+obj1.name); 
+          //Console.WriteLine("your salary in millions is : "+obj1.sal);
+          //the above line will show error because the reference obj1 does not have access to the sal field
+          Console.ReadKey();
+          
+        }
+    }
+    class lol
+    {
+       public  string name;
+    }
+
+    class pol:lol
+    {
+        public int sal;
+
+    }
+    
+}
