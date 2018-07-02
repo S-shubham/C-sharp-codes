@@ -1,0 +1,40 @@
+if some exception is thrown then catch block will be executed
+finally block is used to do some important task which must be executed always irrespective of whether exception has been thrown or not
+
+//////////////////////////////////////Demo Code//////////////////////////
+
+// in down casting subclass reference is created from the base class
+using System;
+
+namespace hello_world
+{  
+
+     class Program
+    {
+       
+        public static void Main(string[] args)
+        {
+          
+          Console.WriteLine("please enter your age : ");
+          int age;
+          try
+          {
+            age=int.Parse(Console.ReadLine());
+            Console.WriteLine("Age writing successfully ");
+          }
+          catch
+          {
+              Console.WriteLine("There is some error with input format ");
+          }
+          finally
+          {
+              Console.WriteLine("this statement must be printed to console");
+          }
+
+          
+          Console.ReadKey();
+          
+        }
+    }
+    
+}
