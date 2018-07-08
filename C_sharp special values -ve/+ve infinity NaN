@@ -1,0 +1,25 @@
+// In C# 8 and 16 bit integers does not have their own arithmetic operators
+// when any arithmetic operation is performed they are automaticall converted to int type
+
+using System;
+using System.Diagnostics;
+namespace hello_world
+{  
+
+     class Program
+    {
+      
+      
+        public static void Main(string[] args)
+        {
+          Console.WriteLine(-2.0/0.0);
+          Console.WriteLine(2.0/0.0);
+          Console.WriteLine(0.0-0.0);
+          
+
+          Console.ReadKey();
+          
+        }
+    }
+    
+}
