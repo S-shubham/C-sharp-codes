@@ -1,0 +1,23 @@
+
+using System;
+using System.Diagnostics;
+namespace hello_world
+{  
+
+     class Program
+    {
+      
+      
+        public static void Main(string[] args)
+        {
+          int x=1000000001;
+          float fo=(float)x;
+          int loll=(int)fo;
+          // magnitude preserved but precision lost
+          Console.WriteLine("loll is : "+loll);
+          Console.ReadKey();
+          
+        }
+    }
+    
+}
