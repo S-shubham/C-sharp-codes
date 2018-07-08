@@ -1,0 +1,26 @@
+// In C# use of + operator to add two strings
+
+
+
+
+using System;
+namespace hello_world
+{  
+
+     class Program
+    {
+      
+      
+        public static void Main(string[] args)
+        {
+           string s= "a"+5+10;
+         Console.WriteLine(s);
+
+        
+         Console.ReadKey();
+        
+          
+        }
+    }
+    
+}
