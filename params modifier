@@ -1,0 +1,55 @@
+rules
+- last argument can be modified as params
+- it must be declared as an array
+- it can accept any no of type values 
+
+
+
+using System;
+using System.Text;
+namespace hello_world
+{  
+
+     class Program
+    {
+       public static void foo(string s,params int[] arr)
+       {
+           if(s=="add")
+           {
+               int sum=0;
+                for(int i=0;i<arr.Length;i++)
+                sum=sum+arr[i];
+                Console.WriteLine("The sum of no is: "+sum);
+           }
+           if(s=="mult")
+           {
+               int prod=1;
+               for(int i=0;i<arr.Length;i++)
+               prod=prod*arr[i];
+
+               Console.WriteLine("the product is : "+prod);
+           }
+
+       }
+      
+        public static void Main(string[] args)
+        {
+          
+         Console.WriteLine("Enter the operation: ");
+         string op=Console.ReadLine();
+         Console.WriteLine("Enter five values ");
+         int[] arr=new int[5];
+         for(int i=0;i<5;i++)
+         arr[i]=Convert.ToInt32(Console.ReadLine());
+
+         foo(op,arr[0],arr[1],arr[2],arr[3],arr[4]);
+
+
+        
+         Console.ReadKey();
+        
+          
+        }
+    }
+    
+}
