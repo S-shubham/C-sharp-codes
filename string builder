@@ -1,0 +1,37 @@
+// first of all even though you are writing function inside a class which contains your main function 
+you will have to declare that fucntion to be static 
+
+then only you can call it without object creation
+
+
+
+using System;
+using System.Text;
+namespace hello_world
+{  
+
+     class Program
+    {
+       public static void foo(StringBuilder ss)
+       {
+           ss.Append("hello love");
+           ss=null;
+
+       }
+      
+        public static void Main(string[] args)
+        {
+          
+         StringBuilder s=new StringBuilder("First ");
+         foo(s);
+
+          Console.WriteLine("now s is : "+s.ToString());
+
+        
+         Console.ReadKey();
+        
+          
+        }
+    }
+    
+}
