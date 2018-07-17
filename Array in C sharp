@@ -5,7 +5,7 @@ C# has three types of array
 -multi dimensional
 - jagged array ?   
        
-Array declaration  
+Array declaration   
 
 int[] arr=new int[5];
 
