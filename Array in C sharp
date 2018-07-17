@@ -3,7 +3,7 @@ In C# array is an object of base type System.Array
 C# has three types of array
 -single dimensional
 -multi dimensional
-- jagged array ?
+- jagged array ?  
   
 Array declaration
 
