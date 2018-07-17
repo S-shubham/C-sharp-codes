@@ -9,7 +9,7 @@ Array declaration
 
 int[] arr=new int[5];
 
-array declaration and initialization
+array declaration and initialization  
 
 int[] arr=new int[5] {1,2,3,4,5};
 
